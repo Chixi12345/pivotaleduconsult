@@ -1,7 +1,15 @@
 import React from "react";
+import Footer from "../../components/footer/Footer";
+import Navbar from "../../components/navbar/Navbar";
 
 const PtePage = () => {
-  return <div>PtePage</div>;
+  return (
+    <div>
+      <Navbar />
+      PtePage
+      <Footer />
+    </div>
+  );
 };
 
 export default PtePage;

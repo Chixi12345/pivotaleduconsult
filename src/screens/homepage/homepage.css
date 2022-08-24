@@ -2,4 +2,49 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.homepage-carouselGene {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.homepage-slider {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+.homepage-sliderbac {
+  width: 100%;
+  height: 100%;
+}
+.homepage-sliderbac img {
+  width: 100%;
+  height: 100%;
+}
+
+.homepage-sliderabso {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.homepage-sliderabso1 h1 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 900px;
+  color: #fff;
+}
+
+.homepage-sliderabso2 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600px;
+  color: #fff;
 }
