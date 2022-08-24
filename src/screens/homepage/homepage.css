@@ -48,3 +48,10 @@ body {
   font-weight: 600px;
   color: #fff;
 }
+
+.homepage-sliderabsobtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+}
