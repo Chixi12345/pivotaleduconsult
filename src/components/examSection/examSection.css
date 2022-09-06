@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.examProfContFamGenn {
+  padding-left: 50px;
+  padding-right: 50px;
+  background: #f9f9f9;
+  padding-top: 20px;
+}
+
+.examProfContHead h2 {
+  /* font-family: "Poppins"; */
+  font-size: 25px;
+  font-weight: 900px;
+  font-style: normal;
+
+  color: #fff;
+  /* border: 1px solid #000; */
+  background-color: #000;
+  padding: 20px 20px;
+  border-radius: 50px;
+}
+
+.examProfContEach-name h4 {
+  font-size: 24px;
+  font-weight: 900px;
+  font-style: normal;
+
+  color: #000;
+}
+
+.examProfContEach-info {
+  width: 90%;
+  word-wrap: break-word;
+}
+
+.examProfContEach {
+  width: 350px;
+  /* background: #f3f3f3; */
+}
+
+.examProfContEach-info p {
+  font-size: 18px;
+  font-weight: 700px;
+  font-style: normal;
+  line-height: 30px;
+  text-align: justify;
+  /* letter-spacing: 0.01em; */
+  color: #000;
+}
+
+.examProfContEach-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 2px 30px; */
+  width: 100px;
+  height: 50px;
+  background: hsl(357, 82%, 82%);
+  border-radius: 50px;
+  color: #000000;
+  font-size: 17px;
+  font-weight: 500px;
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+.examProfContEach-btn:hover {
+  color: #fff;
+  background: #000;
+}
+
+.examProfContFamm {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  justify-content: space-between;
+}

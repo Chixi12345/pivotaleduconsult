@@ -29,7 +29,7 @@ const Footer = () => {
       </div>
       <div className="footer-general-flexx">
         <div className="footer-fffff">
-          <div className="footer-contborfam">
+          <div className="footer-contborfam1">
             <div className="footer-contbor"></div>
             <div className="footer-contbortext">CONTACT INFO</div>
           </div>
@@ -68,7 +68,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <div className="footer-contborfam">
+          <div className="footer-contborfam1">
             <div className="footer-contbor"></div>
             <div className="footer-contbortext">USEFUL LINKS</div>
           </div>
@@ -100,7 +100,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-newsFamGen">
-          <div className="footer-contborfam">
+          <div className="footer-contborfam1">
             <div className="footer-contbor"></div>
             <div className="footer-contbortext">NEWSLETTER</div>
           </div>

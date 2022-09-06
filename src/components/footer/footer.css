@@ -52,7 +52,7 @@ body {
   cursor: pointer;
   transition: transform 0.2s;
   margin-top: 30px;
-  border-radius: 5px;
+  border-radius: 50px;
 }
 
 .topFooter-famteBtn:hover {
@@ -72,6 +72,18 @@ body {
   align-items: center;
   margin-top: 20px;
   cursor: pointer;
+}
+
+.footer-contborfam1 {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.footer-contborfam:hover {
+  transform: scale(1.1);
+  transition: ease-in-out;
 }
 
 .footer-contbortext {
@@ -189,6 +201,8 @@ body {
   background: #f1f1f1;
   color: grey;
   outline: none;
+  /* border-radius: 50px 50px 0 0; */
+  text-align: center;
   /* display: flex;
   align-items: center; */
 }
@@ -206,6 +220,7 @@ body {
   background: #f7acb0;
   color: #fff;
   margin-bottom: 10px;
+  /* border-radius: 0 0 50px 50px; */
 }
 
 .footer-newsinpmainbtn:hover {

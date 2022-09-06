@@ -5,6 +5,33 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.whatsappStickbody {
+  position: fixed;
+  right: 10px;
+  bottom: 100px;
+  background: green;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 35px;
+  z-index: 2000000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.whatsappStickActive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background: red;
+  border-radius: 50%;
+}
 .homepage-carouselGene {
   margin-top: 10px;
   margin-bottom: 20px;
@@ -37,21 +64,100 @@ body {
 }
 .homepage-sliderabso1 h1 {
   text-align: center;
-  font-size: 35px;
+  font-size: 55px;
   font-weight: 900px;
   color: #fff;
 }
 
-.homepage-sliderabso2 {
+.homepage-sliderabso2 h3 {
   text-align: center;
-  font-size: 20px;
-  font-weight: 600px;
+  font-size: 18px;
+  font-weight: 300px;
   color: #fff;
+  margin-top: -20px;
 }
 
 .homepage-sliderabsobtn {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 15px;
+  padding: 2px 30px;
+  background: #ff1928;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 900px;
+  /* transition: 0.5; */
+}
+
+.homepage-sliderabsobtn:hover {
+  background: #fff;
+  color: #000;
+
+  /* transition: transform 0.2s; */
+  transform: scale(1.1);
+}
+/* .homepage-sliderabsobtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+} */
+
+.wavyii {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #fff;
+  text-decoration-color: #fff;
+  -webkit-text-decoration-style: wavy;
+  text-decoration-style: wavy;
+}
+
+.homepage-introFam {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.homepage-introFamHead {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  /* border: 1px solid #000; */
+  background-color: #000;
+  /* padding: 10px 10px; */
+  padding-left: 20px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  /* justify-content: center; */
+}
+
+.homepage-introFamBody {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.homepage-introFamBtn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 2px 30px; */
+  width: 200px;
+  height: 50px;
+  background: #f7acb0;
+  border-radius: 50px;
+  color: #000000;
+  font-size: 17px;
+  font-weight: 500px;
+  /* width: 50%; */
+  margin-bottom: 50px;
+}
+
+.homepage-introFamBtn:hover {
+  color: #fff;
+  background: #000;
 }
