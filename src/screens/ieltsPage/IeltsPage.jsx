@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
 import "./ieltsPage.css";
+import { useLocation } from "react-router-dom";
 
 const IeltsPage = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
-    <div>
+    <div className="maxWidthStyle ">
       <Navbar />
       <div className="ieltsPage-bodyGen">
         <div className="ieltsPage-heading-text">

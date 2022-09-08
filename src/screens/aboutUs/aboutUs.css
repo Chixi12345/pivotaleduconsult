@@ -32,6 +32,7 @@ body {
   line-height: 35px;
   margin-left: 50px;
   margin-right: 50px;
+  text-align: justify;
 }
 
 .aboutUs-MissionText {
@@ -70,4 +71,41 @@ body {
   text-align: justify;
   font-weight: 400;
   line-height: 35px;
+}
+
+@media screen and (max-width: 992px) {
+  .aboutUs-heading-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    /* border: 1px solid #000; */
+    background-color: #000;
+    /* padding: 10px 10px; */
+    padding-left: 0px;
+    height: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+
+    /* justify-content: center; */
+  }
+
+  .aboutUs-MissionText {
+    flex-direction: column;
+  }
+  .aboutUs-MissionEach {
+    width: 100%;
+  }
+
+  .aboutUs-MissionEachHead {
+    font-size: 16px;
+
+    padding-left: 0px;
+    justify-content: center;
+  }
 }

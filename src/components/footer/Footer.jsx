@@ -13,6 +13,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 // import VscTwitter from "react-icons/vsc";
 import { FaTwitter } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div>
@@ -24,7 +25,14 @@ const Footer = () => {
           <div className="topFooter-famtext22">
             Let's Prepare You For Success
           </div>
-          <div className="topFooter-famteBtn">REGISTER TODAY</div>
+
+          <Link
+            to="/registration"
+            style={{ textDecoration: "none" }}
+            className="topFooter-famteBtn"
+          >
+            REGISTER TODAY
+          </Link>
         </div>
       </div>
       <div className="footer-general-flexx">
@@ -67,7 +75,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="footer-contborfamOnne">
           <div className="footer-contborfam1">
             <div className="footer-contbor"></div>
             <div className="footer-contbortext">USEFUL LINKS</div>
@@ -137,7 +145,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="footer-copyrrr">© COPYRIGHT - PIVOTAL EDU CONSULT</div>
+      <div className="footer-copyrrr">
+        © COPYRIGHT - UTOPIA EDUCATIONAL CONSULT LTD
+      </div>
     </div>
   );
 };

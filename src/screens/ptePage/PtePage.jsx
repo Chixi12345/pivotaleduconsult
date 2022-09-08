@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
 import "./ptePage.css";
+import { useLocation } from "react-router-dom";
 
 const PtePage = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
-    <div>
+    <div className="maxWidthStyle ">
       <Navbar />
       <div className="ptePage-bodyGen">
         <div className="ptePage-heading-text">

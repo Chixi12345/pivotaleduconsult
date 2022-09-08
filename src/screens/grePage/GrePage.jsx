@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
 import "./grePage.css";
+import { useLocation } from "react-router-dom";
 
 const GrePage = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
-    <div>
+    <div className="maxWidthStyle ">
       <Navbar />
       <div className="grePage-bodyGen">
         <div className="grePage-heading-text">

@@ -1,12 +1,18 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
 import "./registrationPage.css";
+import { useLocation } from "react-router-dom";
 // import emailjs from "emailjs-com";
 
 import emailjs from "@emailjs/browser";
 
 const RegistrationPage = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -31,7 +37,7 @@ const RegistrationPage = () => {
     e.target.reset();
   };
   return (
-    <div>
+    <div className="maxWidthStyle ">
       <Navbar />
       <div className="regisPage-genFam">
         <div className="regisPage-fillFormHead">Fill The Form Below</div>

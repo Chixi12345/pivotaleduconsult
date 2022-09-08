@@ -12,6 +12,7 @@ import PtePage from "./screens/ptePage/PtePage";
 import RegistrationPage from "./screens/registrationPage/RegistrationPage";
 import ToeflPage from "./screens/toeflPage/ToeflPage";
 import TrainingCenterPage from "./screens/trainingCenterPage/TrainingCenterPage";
+import SatPage from "./screens/satPage/SatPage";
 
 export const ContactPageCont = () => {
   return <ContactPage />;
@@ -51,4 +52,8 @@ export const ToeflPageCont = () => {
 
 export const TrainingCenterPageCont = () => {
   return <TrainingCenterPage />;
+};
+
+export const SatPageCont = () => {
+  return <SatPage />;
 };

@@ -35,4 +35,49 @@ body {
   font-weight: 400;
   line-height: 28.8px;
   color: #000;
+  text-align: justify;
+}
+
+.admissionPage-textCompFlex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.admissionPage-textCompFlexA {
+  width: 48%;
+}
+
+.admissionPage-textCompFlexB {
+  width: 48%;
+}
+
+@media screen and (max-width: 992px) {
+  .admissionPage-textCompFlex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .admissionPage-textCompFlexA {
+    width: 100%;
+  }
+
+  .admissionPage-textCompFlexB {
+    width: 100%;
+  }
+
+  .admissionPage-heading-text {
+    font-size: 16px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: center;
+    text-align: center;
+
+    /* justify-content: center; */
+  }
 }

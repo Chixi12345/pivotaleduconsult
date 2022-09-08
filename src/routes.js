@@ -18,6 +18,7 @@ import {
   RegistrationPageCont,
   ToeflPageCont,
   TrainingCenterPageCont,
+  SatPageCont,
 } from "./pages";
 
 const RoutesE = () => {
@@ -33,6 +34,7 @@ const RoutesE = () => {
     { path: "/registration", element: <RegistrationPageCont /> },
     { path: "/toefl_page", element: <ToeflPageCont /> },
     { path: "/training", element: <TrainingCenterPageCont /> },
+    { path: "/sat_page", element: <SatPageCont /> },
   ]);
   return routes;
 };

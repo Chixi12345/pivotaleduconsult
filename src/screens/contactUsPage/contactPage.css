@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.contactUs-gen {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.contactUs-genFam {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.contactUs-genFam-inputField {
+  position: relative;
+  max-width: 800px;
+  /* margin-left: 10px;
+    margin-right: auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactUs-genFam-inputFields {
+  position: relative;
+  max-width: 857px;
+  /* margin-left: 10px;
+    margin-right: auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contactUs-genFam-inputFields select {
+  padding: 8px 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 50px;
+  border: none;
+  border-bottom: 1px solid #cbd5e0;
+  /* border-bottom: 1.8px solid rgba(107, 107, 107, 0.4); */
+  /* border-radius: 3px; */
+  width: 100%;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+
+  color: #333333;
+  -webkit-appearance: none;
+  border-radius: 0;
+  background: #dde2e6;
+  outline: none;
+}
+.inputFieldPersonalfc {
+  margin-top: 30px;
+  max-width: 857px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.inputFieldPersonalfc textarea {
+  font-family: "Poppins";
+  width: 100%;
+  -webkit-appearance: none;
+  border-radius: 0;
+  height: 120px;
+  border: none;
+  border-bottom: 1px solid #cbd5e0;
+  outline: none;
+  font-weight: 400;
+  font-size: 14px;
+
+  /* Text color */
+
+  color: #333333;
+  padding-left: 10px;
+  padding-left: 10px;
+  /* padding-right: 10px; */
+}
+.inputFieldPersonal textarea:focus {
+  border-bottom: 2px solid #36a6a4;
+}
+.contactUs-genFam-inputField select:focus {
+  /* border: 1.8px solid #6b6b6b; */
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #f7acb0;
+}
+.contactUs-genFam-inputField input {
+  padding: 8px 10px;
+  padding-top: 20px;
+  padding-right: 50px;
+  border: none;
+  border-bottom: 1px solid #cbd5e0;
+  /* border-bottom: 1.8px solid rgba(107, 107, 107, 0.4); */
+  /* border-radius: 3px; */
+  width: 100%;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+
+  color: #333333;
+  -webkit-appearance: none;
+  border-radius: 0;
+  background: #dde2e6;
+}
+
+.contactUs-genFam-inputField input:focus {
+  /* border: 1.8px solid #6b6b6b; */
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #f7acb0;
+}
+.contactUs-genFam-inputField span {
+  pointer-events: none;
+  opacity: 0.5;
+  position: absolute;
+  padding-left: 20px;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: text;
+
+  font-weight: 500;
+  font-size: 14px;
+
+  /* Text color */
+
+  color: #333333;
+}
+
+.contactUs-genFam-inputField input:focus + span,
+.contactUs-genFam-inputField input:not(:placeholder-shown) + span {
+  top: 7px;
+  -webkit-transform: scale(0.7) translateY(-10%) translateX(-8.5px);
+  transform: scale(0.7) translateY(-10%) translateX(-8.5px);
+  font-size: 14px;
+}
+.contactUs-genFam-inputField input,
+.contactUs-genFam-inputField span {
+  /* -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; */
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.contactUs-genFam-inputFieldSubmit {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.contactUs-genFam-inputFieldSubmit input {
+  /* padding: 15px 70px; */
+  width: 300px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: #dd3333;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+.contactUs-genFam-inputFieldSubmit input:hover {
+  background: #000;
+  transition: 0.5s;
+  color: #fff;
+}
+.contactUs-fillFormHead {
+  text-align: center;
+
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  /* border: 1px solid #000; */
+  background-color: #000;
+  max-width: 856px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.contactUs-fillFormGuide {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #dd3333;
+}
+
+.contactUs-fillFormGui {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #dd3333;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactUs-fillFormGuid {
+  /* margin-top: 30px; */
+  margin-bottom: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #dd3333;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactUs-Famd {
+  width: 32%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contactUs-Icon {
+  font-size: 50px;
+  color: #ff1928;
+}
+
+.contactUs-Text {
+  font-size: 16px;
+  font-weight: 600;
+  align-items: center;
+  text-align: center;
+}
+
+.contactPage-genFam {
+  background: #999;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.contactUs-MessageT {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+}
+
+@media screen and (max-width: 992px) {
+  .contactUs-gen {
+    /* display: flex; */
+    align-items: center;
+    /* justify-content: space-between;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px; */
+    flex-direction: column;
+  }
+
+  .contactUs-Famd {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .contactUs-genFam-inputField span {
+    font-weight: 500;
+    font-size: 10px;
+  }
+
+  .contactUs-genFam-inputField input:focus + span,
+  .contactUs-genFam-inputField input:not(:placeholder-shown) + span {
+    top: 7px;
+    -webkit-transform: scale(0.7) translateY(-10%) translateX(-8.5px);
+    transform: scale(0.7) translateY(-10%) translateX(-8.5px);
+    font-size: 10px;
+  }
+
+  .contactUs-genFam-inputFields select {
+    width: 100%;
+  }
+
+  .contactUs-genFam-inputField input {
+    width: 80%;
+  }
+
+  .inputFieldPersonalfc textarea {
+    width: 90%;
+  }
+}
