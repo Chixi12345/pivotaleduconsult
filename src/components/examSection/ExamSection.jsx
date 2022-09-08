@@ -1,5 +1,6 @@
 import React from "react";
 import "./examSection.css";
+import { Link } from "react-router-dom";
 
 const ExamSection = () => {
   return (
@@ -22,9 +23,14 @@ const ExamSection = () => {
               everyday academic purpose.
             </p>
           </div>
-          <div className="examProfContEach-btn">
+
+          <Link
+            to="/toefl_page"
+            style={{ textDecoration: "none" }}
+            className="examProfContEach-btn"
+          >
             <h4>LEARN MORE</h4>
-          </div>
+          </Link>
         </div>
 
         <div className="examProfContEach">
@@ -39,9 +45,14 @@ const ExamSection = () => {
               education and global migration.
             </p>
           </div>
-          <div className="examProfContEach-btn">
+
+          <Link
+            to="/ielts_page"
+            style={{ textDecoration: "none" }}
+            className="examProfContEach-btn"
+          >
             <h4>LEARN MORE</h4>
-          </div>
+          </Link>
         </div>
 
         <div className="examProfContEach">
@@ -56,9 +67,14 @@ const ExamSection = () => {
               Speaking and Writing abilities of non-native speakers of English
             </p>
           </div>
-          <div className="examProfContEach-btn">
+
+          <Link
+            to="/pte_page"
+            style={{ textDecoration: "none" }}
+            className="examProfContEach-btn"
+          >
             <h4>LEARN MORE</h4>
-          </div>
+          </Link>
         </div>
 
         <div className="examProfContEach">
@@ -73,9 +89,13 @@ const ExamSection = () => {
               you know and how well you can apply that knowledge
             </p>
           </div>
-          <div className="examProfContEach-btn">
+          <Link
+            to="/sat_page"
+            style={{ textDecoration: "none" }}
+            className="examProfContEach-btn"
+          >
             <h4>LEARN MORE</h4>
-          </div>
+          </Link>
         </div>
 
         <div className="examProfContEach">
@@ -90,9 +110,13 @@ const ExamSection = () => {
               prerequisite/component for admission to a graduate program.
             </p>
           </div>
-          <div className="examProfContEach-btn">
+          <Link
+            to="/gre_page"
+            style={{ textDecoration: "none" }}
+            className="examProfContEach-btn"
+          >
             <h4>LEARN MORE</h4>
-          </div>
+          </Link>
         </div>
 
         <div className="examProfContEach">
@@ -107,9 +131,13 @@ const ExamSection = () => {
               success.
             </p>
           </div>
-          <div className="examProfContEach-btn">
+          <Link
+            to="/gmat_page"
+            style={{ textDecoration: "none" }}
+            className="examProfContEach-btn"
+          >
             <h4>LEARN MORE</h4>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

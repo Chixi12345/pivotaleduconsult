@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
+import { useLocation } from "react-router-dom";
 
 const TrainingCenterPage = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
-    <div>
+    <div className="maxWidthStyle ">
       <Navbar />
       TrainingCenterPage
       <Footer />

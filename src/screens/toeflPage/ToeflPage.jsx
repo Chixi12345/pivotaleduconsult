@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
 import "./toeflPage.css";
+import { useLocation } from "react-router-dom";
 
 const ToeflPage = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
-    <div>
+    <div className="maxWidthStyle ">
       <Navbar />
       <div className="toeflPage-bodyGen">
         <div className="toeflPage-heading-text">

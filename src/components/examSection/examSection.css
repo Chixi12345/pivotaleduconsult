@@ -40,7 +40,7 @@ body {
 }
 
 .examProfContEach {
-  width: 350px;
+  max-width: 450px;
   /* background: #f3f3f3; */
 }
 
@@ -74,6 +74,7 @@ body {
 .examProfContEach-btn:hover {
   color: #fff;
   background: #000;
+  transition: 0.5s;
 }
 
 .examProfContFamm {
@@ -81,4 +82,26 @@ body {
   flex-wrap: wrap;
   align-self: flex-start;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 1000px) {
+  .examProfContEach {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .examProfContHead h2 {
+    /* font-family: "Poppins"; */
+    font-size: 14px;
+    font-weight: 900px;
+    font-style: normal;
+
+    color: #fff;
+    /* border: 1px solid #000; */
+    background-color: #000;
+    padding: 20px 20px;
+    border-radius: 50px;
+    text-transform: uppercase;
+  }
 }
