@@ -1,10 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./adminSection.css";
 import { Link } from "react-router-dom";
 
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+// import { useLocation } from "react-router-dom";
+
+const squareVariantsX = {
+  visible: { opacity: 1, y: 0, transition: { duration: 2 } },
+  hidden: { opacity: 0, y: 100 },
+};
+
 const AdminSection = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
   return (
-    <div className="admissionProcess-FamGen">
+    <motion.div
+      ref={ref}
+      animate={controls}
+      initial="hidden"
+      variants={squareVariantsX}
+      className="admissionProcess-FamGen"
+    >
       <div className="admissionProcess-FamHead">
         {" "}
         <h2>Admission Processing</h2>
@@ -31,7 +54,7 @@ const AdminSection = () => {
       >
         <h4>LEARN MORE</h4>
       </Link>
-    </div>
+    </motion.div>
   );
 };
 

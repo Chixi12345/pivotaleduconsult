@@ -1,15 +1,37 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./examSection.css";
 import { Link } from "react-router-dom";
 
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+// import { useLocation } from "react-router-dom";
+
+const squareVariantsX = {
+  visible: { opacity: 1, y: 0, transition: { duration: 2 } },
+  hidden: { opacity: 0, y: 100 },
+};
+
 const ExamSection = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
   return (
     <div className="examProfContFamGenn">
       <div className="examProfContHead">
         <h2>Exams Training/Registration</h2>
       </div>
-
-      <div className="examProfContFamm">
+      <motion.div
+        ref={ref}
+        animate={controls}
+        initial="hidden"
+        variants={squareVariantsX}
+        className="examProfContFamm"
+      >
         <div className="examProfContEach">
           <div className="examProfContEach-name">
             <h4>TOEFL</h4>
@@ -139,7 +161,7 @@ const ExamSection = () => {
             <h4>LEARN MORE</h4>
           </Link>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

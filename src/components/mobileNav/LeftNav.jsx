@@ -227,10 +227,19 @@ const LeftNav = ({ open, openLogoutBtn, closeLogoutBtn, openLogoutPage }) => {
                   ? "leftNavbar-opt-active"
                   : "leftNavbar-opt"
               }
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: "none", marginBottom: "100px" }}
             >
               CONTACT US
             </Link>
+            <div
+              // to="/contact_page"
+              // className={
+              //   splitLocation[1] === "contact_page"
+              //     ? "leftNavbar-opt-active"
+              //     : "leftNavbar-opt"
+              // }
+              style={{ textDecoration: "none", paddingBottom: "300px" }}
+            ></div>
           </div>
         </div>
       </div>

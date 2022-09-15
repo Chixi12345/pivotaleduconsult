@@ -93,25 +93,54 @@ const Navbar = () => {
       )}
       <div className="navbar-infoFamFlex">
         <div className="navbar-infoNumber">
-          CALL US: 08063828855, 08136964605
+          CALL US: 07030916267, 08091609312, 09019171273
         </div>
         <div className="navbar-infoIconsFam">
-          <div className="navbar-infoIconEach">
-            <FaInstagram />
-          </div>
-          <div className="navbar-infoIconEach">
-            <FaWhatsapp />
-          </div>
-          <div className="navbar-infoIconEach">
-            <FaTwitter />
-          </div>
+          <a
+            aria-label="Chat on WhatsApp"
+            href="https://www.instagram.com/utopiaconsulthq/"
+            style={{ textDecoration: "none", cursor: "pointer" }}
+            target="_blank"
+          >
+            <div className="navbar-infoIconEach">
+              <FaInstagram />
+            </div>
+          </a>
+          <a
+            aria-label="Chat on WhatsApp"
+            href="https://wa.me/2347030916267"
+            style={{ textDecoration: "none", cursor: "pointer" }}
+            target="_blank"
+          >
+            <div className="navbar-infoIconEach">
+              <FaWhatsapp />
+            </div>
+          </a>
+          <a
+            aria-label="Chat on WhatsApp"
+            href="https://twitter.com/utopiaconsulthq"
+            style={{ textDecoration: "none", cursor: "pointer" }}
+            target="_blank"
+          >
+            <div className="navbar-infoIconEach">
+              <FaTwitter />
+            </div>
+          </a>
+
           <div className="navbar-infoIconEach">
             <FaLinkedin />
           </div>
 
-          <div className="navbar-infoIconEach">
-            <FaFacebookSquare />
-          </div>
+          <a
+            aria-label="Chat on WhatsApp"
+            href="https://web.facebook.com/utopiaconsulthq/"
+            style={{ textDecoration: "none", cursor: "pointer" }}
+            target="_blank"
+          >
+            <div className="navbar-infoIconEach">
+              <FaFacebookSquare />
+            </div>
+          </a>
         </div>
       </div>
 

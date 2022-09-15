@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import footerrr from "../../assets/images/footerrr.jpg";
 import bottomm from "../../assets/images/bottomm.jpg";
 import "./footer.css";
@@ -14,7 +14,25 @@ import { FaWhatsapp } from "react-icons/fa";
 // import VscTwitter from "react-icons/vsc";
 import { FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
+
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+// import { useLocation } from "react-router-dom";
+
+const squareVariantsX = {
+  visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+  hidden: { opacity: 0, y: 100 },
+};
+
 const Footer = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
   return (
     <div>
       <div className="topFooter-fam">
@@ -26,13 +44,20 @@ const Footer = () => {
             Let's Prepare You For Success
           </div>
 
-          <Link
-            to="/registration"
-            style={{ textDecoration: "none" }}
-            className="topFooter-famteBtn"
+          <motion.div
+            ref={ref}
+            animate={controls}
+            initial="hidden"
+            variants={squareVariantsX}
           >
-            REGISTER TODAY
-          </Link>
+            <Link
+              to="/registration"
+              style={{ textDecoration: "none" }}
+              className="topFooter-famteBtn"
+            >
+              REGISTER TODAY
+            </Link>
+          </motion.div>
         </div>
       </div>
       <div className="footer-general-flexx">
@@ -70,7 +95,7 @@ const Footer = () => {
             <div className="footer-AddressTextt">
               <div className="footer-AddressTextt1">Email:</div>
               <div className="footer-EmailTextt2">
-                info@pivotaleduconsult.com
+                utopiaeduconsult@gmail.com
               </div>
             </div>
           </div>
@@ -80,31 +105,39 @@ const Footer = () => {
             <div className="footer-contbor"></div>
             <div className="footer-contbortext">USEFUL LINKS</div>
           </div>
-          <div className="footer-contborfam">
+
+          <Link
+            to="/about_us"
+            style={{ textDecoration: "none" }}
+            className="footer-contborfam"
+          >
             <div className="footer-contboruu">
               <FaCircle />
             </div>
             <div className="footer-EmailTextt2">About Us </div>
-          </div>
+          </Link>
 
-          <div className="footer-contborfam">
+          <Link
+            to="/registration"
+            style={{ textDecoration: "none" }}
+            className="footer-contborfam"
+          >
             <div className="footer-contboruu">
               <FaCircle />
             </div>
             <div className="footer-EmailTextt2">Registration </div>
-          </div>
-          <div className="footer-contborfam">
-            <div className="footer-contboruu">
-              <FaCircle />
-            </div>
-            <div className="footer-EmailTextt2">Exams </div>
-          </div>
-          <div className="footer-contborfam">
+          </Link>
+
+          <Link
+            to="/contact_page"
+            style={{ textDecoration: "none" }}
+            className="footer-contborfam"
+          >
             <div className="footer-contboruu">
               <FaCircle />
             </div>
             <div className="footer-EmailTextt2">Contact Us </div>
-          </div>
+          </Link>
         </div>
 
         <div className="footer-newsFamGen">
@@ -125,22 +158,50 @@ const Footer = () => {
               <div className="footer-newsinpmainbtn">SUBMIT</div>
             </div>
             <div className="navbar-infoIconsFam">
-              <div className="navbar-infoIconEach">
-                <FaInstagram />
-              </div>
-              <div className="navbar-infoIconEach">
-                <FaWhatsapp />
-              </div>
-              <div className="navbar-infoIconEach">
-                <FaTwitter />
-              </div>
+              <a
+                aria-label="Chat on WhatsApp"
+                href="https://www.instagram.com/utopiaconsulthq/"
+                style={{ textDecoration: "none", cursor: "pointer" }}
+                target="_blank"
+              >
+                <div className="navbar-infoIconEach">
+                  <FaInstagram />
+                </div>
+              </a>
+              <a
+                aria-label="Chat on WhatsApp"
+                href="https://wa.me/2347030916267"
+                style={{ textDecoration: "none", cursor: "pointer" }}
+                target="_blank"
+              >
+                <div className="navbar-infoIconEach">
+                  <FaWhatsapp />
+                </div>
+              </a>
+              <a
+                aria-label="Chat on WhatsApp"
+                href="https://twitter.com/utopiaconsulthq"
+                style={{ textDecoration: "none", cursor: "pointer" }}
+                target="_blank"
+              >
+                <div className="navbar-infoIconEach">
+                  <FaTwitter />
+                </div>
+              </a>
               <div className="navbar-infoIconEach">
                 <FaLinkedin />
               </div>
 
-              <div className="navbar-infoIconEach">
-                <FaFacebookSquare />
-              </div>
+              <a
+                aria-label="Chat on WhatsApp"
+                href="https://web.facebook.com/utopiaconsulthq/"
+                style={{ textDecoration: "none", cursor: "pointer" }}
+                target="_blank"
+              >
+                <div className="navbar-infoIconEach">
+                  <FaFacebookSquare />
+                </div>
+              </a>
             </div>
           </div>
         </div>

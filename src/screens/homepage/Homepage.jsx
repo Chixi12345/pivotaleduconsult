@@ -27,6 +27,11 @@ const squareVariants = {
   hidden: { opacity: 0 },
 };
 
+const squareVariantsY = {
+  visible: { opacity: 1, y: 0, transition: { duration: 2 } },
+  hidden: { opacity: 0, y: 100 },
+};
+
 const Homepage = () => {
   const location = useLocation();
   const controls = useAnimation();
@@ -46,10 +51,17 @@ const Homepage = () => {
     <div className="maxWidthStyle ">
       <Navbar />
       <div>
-        <div className="whatsappStickbody">
-          <div className="whatsappStickActive"></div>
-          <FaWhatsapp />
-        </div>
+        <a
+          aria-label="Chat on WhatsApp"
+          href="https://wa.me/2347030916267"
+          style={{ textDecoration: "none", cursor: "pointer" }}
+          target="_blank"
+        >
+          <div className="whatsappStickbody">
+            <div className="whatsappStickActive"></div>
+            <FaWhatsapp />
+          </div>
+        </a>
 
         <motion.span
           ref={ref}
@@ -286,7 +298,9 @@ const Homepage = () => {
       </div>
 
       <ExamSection />
+
       <AdminSection />
+
       <Footer />
     </div>
   );
